@@ -4,7 +4,7 @@ Customize Leaflet maps with a linked Google Sheets template or CSV files and Geo
 ![Preview](preview.jpg)
 
 ## Live links (replace with your own)
-- Leaflet Map https://landstudiopr.github.io/Riopiedrasmap/
+- Leaflet Map 'https://cartografias177.github.io/Riopiedrasmap/'
 - Google Sheets template 'https://docs.google.com/spreadsheets/d/1bY2jJv5qBZd53o-uj3tw6Vg2piFjqpiivsuqYpRvC-c/edit?gid=164271551#gid=164271551'
 
 ## Create your own
