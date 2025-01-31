@@ -1,5 +1,18 @@
-// paste in your published Google Sheets URL from the browser address bar
-var googleDocURL = 'https://docs.google.com/spreadsheets/d/1UDL7R83qJ6CpmPSu_Cp0WzU6ROfpaMPo0sdMJtWrkMk/edit?gid=0#gid=0';
+// ID de la hoja de cálculo
+var spreadsheetId = '1UDL7R83qJ6CpmPSu_Cp0WzU6ROfpaMPo0sdMJtWrkMk';
+// El rango de celdas que deseas leer (ajústalo según sea necesario)
+var range = 'Sheet1!A1:Z100';
 
-// insert your own Google Sheets API key from https://console.developers.google.com
+// Tu clave de API de Google
 var googleApiKey = 'AIzaSyBh9nKnVZm2RPeZa0ywCOxPAgJJfK87WhY';
+
+// La URL para obtener los datos
+var googleSheetsAPIUrl = 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/' + range + '?key=' + googleApiKey;
+
+// Llamada AJAX para obtener los datos
+fetch(googleSheetsAPIUrl)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => console.error('Error:', error));
